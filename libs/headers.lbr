@@ -82,6 +82,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Headers, Terminal Blocks, Etc.</description>
 <packages>
 <package name="1760490000">
 <wire x1="-2.54" y1="4.2" x2="-2.54" y2="-3.8" width="0.127" layer="21"/>
