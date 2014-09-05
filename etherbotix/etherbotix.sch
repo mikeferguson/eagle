@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1484,6 +1498,9 @@ tested: NO</description>
 <vertex x="-2.15" y="2.1"/>
 </polygon>
 </package>
+<package name="TEST">
+<pad name="T" x="0" y="0" drill="0.508"/>
+</package>
 </packages>
 <symbols>
 <symbol name="+12V">
@@ -1570,6 +1587,11 @@ tested: NO</description>
 <text x="-2.54" y="0.254" size="1.4224" layer="94">+</text>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="TESTPAD">
+<pin name="1" x="-2.54" y="0" visible="off" length="short"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<text x="1.27" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1943,6 +1965,21 @@ tested: NO</description>
 <technology name="">
 <attribute name="VALUE" value="750"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TESTPAD" prefix="T">
+<gates>
+<gate name="G$1" symbol="TESTPAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEST">
+<connects>
+<connect gate="G$1" pin="1" pad="T"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2819,6 +2856,12 @@ Based on the following sources:
 <part name="R30" library="fergs" deviceset="P120HCT-ND" device="" value="120"/>
 <part name="R31" library="fergs" deviceset="P750HCT-ND" device="" value="750"/>
 <part name="R32" library="fergs" deviceset="P750HCT-ND" device="" value="750"/>
+<part name="T1" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T2" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T3" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T4" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T5" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T6" library="fergs" deviceset="TESTPAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3041,6 +3084,12 @@ Based on the following sources:
 <instance part="R30" gate="G$1" x="434.34" y="88.9" rot="R90"/>
 <instance part="R31" gate="G$1" x="429.26" y="99.06" rot="R90"/>
 <instance part="R32" gate="G$1" x="441.96" y="78.74" rot="R90"/>
+<instance part="T1" gate="G$1" x="228.6" y="73.66" rot="R180"/>
+<instance part="T2" gate="G$1" x="228.6" y="76.2" rot="R180"/>
+<instance part="T3" gate="G$1" x="325.12" y="170.18"/>
+<instance part="T4" gate="G$1" x="325.12" y="157.48"/>
+<instance part="T5" gate="G$1" x="325.12" y="154.94"/>
+<instance part="T6" gate="G$1" x="325.12" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -4896,6 +4945,48 @@ Based on the following sources:
 <pinref part="R28" gate="G$1" pin="2"/>
 <junction x="340.36" y="200.66"/>
 <label x="320.04" y="200.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PB9" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB9/TIM11_CH1(5T)"/>
+<pinref part="T1" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="73.66" x2="231.14" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PB8" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB8/TIM10_CH1(5T)"/>
+<pinref part="T2" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="76.2" x2="231.14" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PC12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC12/UART5_TX(5T)"/>
+<pinref part="T3" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="170.18" x2="317.5" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PD0" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD0/CAN1_RX(5T)"/>
+<pinref part="T4" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="157.48" x2="317.5" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PD1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD1/CAN1_TX(5T)"/>
+<pinref part="T5" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PD2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD2/UART5_RX(5T)"/>
+<pinref part="T6" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="152.4" x2="317.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
