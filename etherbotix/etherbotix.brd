@@ -108,7 +108,7 @@
 <hole x="2.54" y="2.54" drill="2.794"/>
 <hole x="96.52" y="2.54" drill="2.794"/>
 <hole x="96.52" y="46.99" drill="2.794"/>
-<text x="24.13" y="48.26" size="1.27" layer="21">ETHERBOTIX V1.0. COPYRIGHT 2014 MICHAEL E. FERGUSON</text>
+<text x="22.225" y="48.26" size="1.27" layer="21">ETHERBOTIX V1.0. COPYRIGHT 2014 MICHAEL E. FERGUSON</text>
 <text x="9.2075" y="27.305" size="0.8128" layer="25">A1</text>
 <text x="9.2075" y="24.765" size="0.8128" layer="25">A0</text>
 <text x="9.2075" y="29.845" size="0.8128" layer="25">A2</text>
@@ -126,6 +126,8 @@
 <text x="4.1275" y="3.81" size="1.27" layer="25">VIN</text>
 <text x="11.27125" y="2.38125" size="1.27" layer="25" rot="R180">AUX.</text>
 <text x="37.465" y="13.49375" size="0.8128" layer="25" rot="R180">U4</text>
+<rectangle x1="0" y1="11.1125" x2="1.27" y2="14.76375" layer="21"/>
+<rectangle x1="13.414375" y1="-1.190625" x2="14.684375" y2="2.460625" layer="21" rot="R90"/>
 </plain>
 <libraries>
 <library name="pololu">
@@ -1135,7 +1137,9 @@ design rules under a new name.</description>
 <element name="IMU" library="pololu" package="MINI9IMU" value="MINI9IMU" x="78.4225" y="15.24" smashed="yes">
 <attribute name="NAME" x="88.5825" y="21.0185" size="1.27" layer="21" rot="R180"/>
 </element>
-<element name="J1" library="ethernet" package="J3" value="J3011G21DNL" x="96.52" y="30.48"/>
+<element name="J1" library="ethernet" package="J3" value="J3011G21DNL" x="96.52" y="30.48" smashed="yes">
+<attribute name="NAME" x="95.5675" y="29.94025" size="1.27" layer="25"/>
+</element>
 <element name="J2" library="molex" package="5267-3" value="22-03-5035" x="12.7" y="27.305" rot="R180"/>
 <element name="J3" library="molex" package="5267-3" value="22-03-5035" x="12.7" y="22.225" rot="R180"/>
 <element name="J4" library="molex" package="5267-4" value="22-03-5045" x="12.7" y="32.7025" rot="R180"/>
@@ -1159,8 +1163,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="60.3301" y="19.4249" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U2" library="ethernet" package="LQFP48" value="TLK110" x="59.69" y="40.3225"/>
-<element name="U3" library="power" package="OKI-78SR" value="OKI-78SR-5" x="16.51" y="13.97">
+<element name="U3" library="power" package="OKI-78SR" value="OKI-78SR-5" x="16.51" y="13.97" smashed="yes">
 <attribute name="VOLTAGE" value="5" x="16.51" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.43" y="18.89125" size="1.27" layer="21"/>
 </element>
 <element name="U4" library="power" package="DPAK" value="TLV1117" x="34.6075" y="8.5725" rot="R90"/>
 <element name="U5" library="allegro" package="SOIC8" value="ACS711ELCTR-25AB-T" x="26.67" y="7.62" smashed="yes" rot="R270">
