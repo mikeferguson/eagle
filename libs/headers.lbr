@@ -354,7 +354,7 @@ tested: NO</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1760520000" prefix="J">
+<deviceset name="1760510000" prefix="J">
 <description>15A 2P TERM BLOCK, BLACK&lt;br&gt;
 tested: NO</description>
 <gates>

@@ -1344,7 +1344,7 @@ tested: YES (etherbotix)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1760520000" prefix="J">
+<deviceset name="1760510000" prefix="J">
 <description>15A 2P TERM BLOCK, BLACK&lt;br&gt;
 tested: NO</description>
 <gates>
@@ -2641,7 +2641,7 @@ Based on the following sources:
 <part name="J3" library="molex" deviceset="22-03-5035" device=""/>
 <part name="J4" library="molex" deviceset="22-03-5045" device=""/>
 <part name="J5" library="molex" deviceset="22-03-5045" device=""/>
-<part name="J6" library="headers" deviceset="1760520000" device=""/>
+<part name="J6" library="headers" deviceset="1760510000" device=""/>
 <part name="J7" library="headers" deviceset="1760490000" device=""/>
 <part name="GND7" library="fergs" deviceset="GND" device=""/>
 <part name="GND8" library="fergs" deviceset="GND" device=""/>
