@@ -1117,8 +1117,8 @@ tested:  YES (etherbotix)</description>
 <wire x1="45.212" y1="23.622" x2="45.212" y2="-23.622" width="0.127" layer="21"/>
 <wire x1="45.212" y1="-23.622" x2="-2.032" y2="-23.622" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="-23.622" x2="-2.032" y2="23.622" width="0.127" layer="21"/>
-<hole x="41.656" y="20.32" drill="2.8"/>
-<hole x="41.656" y="-20.32" drill="2.8"/>
+<hole x="42.164" y="20.32" drill="2.8"/>
+<hole x="42.164" y="-20.32" drill="2.8"/>
 </package>
 </packages>
 <symbols>
