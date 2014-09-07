@@ -1003,18 +1003,19 @@ tested: YES (etherbotix)</description>
 <text x="-5.08" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="DPAK">
-<wire x1="5.3594" y1="-3.18" x2="5.3594" y2="3.18" width="0.254" layer="21"/>
-<wire x1="5.3594" y1="3.18" x2="-0.975" y2="3.18" width="0.254" layer="51"/>
-<wire x1="-0.975" y1="3.18" x2="-2.3466" y2="2.5" width="0.254" layer="51"/>
-<wire x1="-2.3466" y1="2.5" x2="-2.3466" y2="-2.5" width="0.254" layer="51"/>
-<wire x1="-2.3466" y1="-2.5" x2="-1.029" y2="-3.18" width="0.254" layer="51"/>
-<wire x1="-1.029" y1="-3.18" x2="-0.975" y2="-3.18" width="0.254" layer="51"/>
-<wire x1="-0.975" y1="-3.18" x2="5.3594" y2="-3.18" width="0.254" layer="51"/>
-<wire x1="-0.975" y1="-3.18" x2="-0.975" y2="3.18" width="0.254" layer="51"/>
-<smd name="3" x="7.18" y="2.29" dx="3" dy="1.6" layer="1"/>
-<smd name="1" x="7.18" y="-2.29" dx="3" dy="1.6" layer="1"/>
-<smd name="4" x="0" y="0" dx="6.2" dy="5.8" layer="1"/>
+<wire x1="4.89" y1="-3.35" x2="4.89" y2="3.35" width="0.254" layer="21"/>
+<wire x1="4.89" y1="3.35" x2="-1.33" y2="3.35" width="0.254" layer="21"/>
+<wire x1="-1.33" y1="-3.35" x2="4.89" y2="-3.35" width="0.254" layer="21"/>
+<wire x1="-1.33" y1="-3.35" x2="-1.33" y2="3.35" width="0.254" layer="21"/>
+<smd name="3" x="7.4" y="2.29" dx="3.2" dy="0.93" layer="1"/>
+<smd name="1" x="7.4" y="-2.29" dx="3.2" dy="0.93" layer="1"/>
+<smd name="4" x="0" y="0" dx="6.2" dy="5.4" layer="1"/>
 <text x="-3.501" y="-3.81" size="1.27" layer="27" rot="R90">&gt;NAME</text>
+<rectangle x1="4.89" y1="1.87" x2="7.8" y2="2.71" layer="21"/>
+<rectangle x1="4.89" y1="-2.71" x2="7.8" y2="-1.87" layer="21"/>
+<wire x1="-1.27" y1="2.72" x2="-2.6" y2="2.72" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="2.72" x2="-2.6" y2="-2.72" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="-2.72" x2="-1.27" y2="-2.72" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -1113,10 +1114,10 @@ tested:  YES (etherbotix)</description>
 <pad name="2B" x="0" y="-12.7" drill="0.8128"/>
 <pad name="2A" x="0" y="-15.24" drill="0.8128"/>
 <pad name="EN2" x="0" y="-17.78" drill="0.8128"/>
-<wire x1="-2.032" y1="23.622" x2="45.212" y2="23.622" width="0.127" layer="21"/>
-<wire x1="45.212" y1="23.622" x2="45.212" y2="-23.622" width="0.127" layer="21"/>
-<wire x1="45.212" y1="-23.622" x2="-2.032" y2="-23.622" width="0.127" layer="21"/>
-<wire x1="-2.032" y1="-23.622" x2="-2.032" y2="23.622" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="23.622" x2="45.212" y2="23.622" width="0.127" layer="51"/>
+<wire x1="45.212" y1="23.622" x2="45.212" y2="-23.622" width="0.127" layer="51"/>
+<wire x1="45.212" y1="-23.622" x2="-2.032" y2="-23.622" width="0.127" layer="51"/>
+<wire x1="-2.032" y1="-23.622" x2="-2.032" y2="23.622" width="0.127" layer="51"/>
 <hole x="42.164" y="20.32" drill="2.8"/>
 <hole x="42.164" y="-20.32" drill="2.8"/>
 </package>
