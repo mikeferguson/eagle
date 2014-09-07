@@ -1278,6 +1278,27 @@ tested:  YES (etherbotix)</description>
 <pad name="P$7" x="15.24" y="0" drill="0.8128"/>
 <pad name="P$8" x="17.78" y="0" drill="0.8128"/>
 </package>
+<package name="1760520000">
+<wire x1="-2.54" y1="4.2" x2="-2.54" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.8" x2="12.7" y2="-3.8" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-3.8" x2="12.7" y2="4.2" width="0.127" layer="21"/>
+<wire x1="12.7" y1="4.2" x2="-2.54" y2="4.2" width="0.127" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.5" shape="square"/>
+<pad name="2" x="5.08" y="0" drill="1.5"/>
+<text x="-2.54" y="4.445" size="1.27" layer="21">&gt;NAME</text>
+<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="4.445" y1="-3.81" x2="5.715" y2="-1.27" layer="21"/>
+<pad name="3" x="10.16" y="0" drill="1.5"/>
+<rectangle x1="9.525" y1="-3.81" x2="10.795" y2="-1.27" layer="21"/>
+</package>
+<package name="J2">
+<wire x1="-1.27" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<pad name="A" x="0" y="0" drill="0.8128"/>
+<pad name="B" x="2.54" y="0" drill="0.8128"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CORTEX_DEBUG">
@@ -1319,6 +1340,25 @@ tested:  YES (etherbotix)</description>
 <pin name="P$7" x="0" y="-15.24" visible="off" length="middle"/>
 <pin name="P$8" x="0" y="-17.78" visible="off" length="middle"/>
 </symbol>
+<symbol name="CONN3">
+<wire x1="-3.81" y1="8.89" x2="3.81" y2="8.89" width="0.254" layer="94"/>
+<wire x1="3.81" y1="8.89" x2="3.81" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-8.89" x2="-3.81" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-8.89" x2="-3.81" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.8128" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.8128" layer="94"/>
+<text x="-3.81" y="9.525" size="1.27" layer="95">&gt;NAME</text>
+<pin name="2" x="-7.62" y="0" visible="pad" length="middle"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="middle"/>
+<pin name="3" x="-7.62" y="-5.08" visible="pad" length="middle"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.8128" layer="94"/>
+</symbol>
+<symbol name="JUMPER">
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.8128" layer="94"/>
+<text x="-1.27" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<pin name="B" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CORTEX_DEBUG">
@@ -1351,24 +1391,6 @@ tested: YES (etherbotix)</description>
 <connect gate="G$1" pin="TMS" pad="2"/>
 <connect gate="G$1" pin="TRST" pad="10"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1760510000" prefix="J">
-<description>15A 2P TERM BLOCK, BLACK&lt;br&gt;
-tested: NO</description>
-<gates>
-<gate name="G$1" symbol="CONN2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1760490000">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1409,6 +1431,41 @@ tested: NO</description>
 <connect gate="G$1" pin="P$6" pad="P$6"/>
 <connect gate="G$1" pin="P$7" pad="P$7"/>
 <connect gate="G$1" pin="P$8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1760520000" prefix="J">
+<description>15A 3P TERM BLOCK, BLACK
+tested: NO</description>
+<gates>
+<gate name="G$1" symbol="CONN3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1760520000">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER" prefix="J">
+<gates>
+<gate name="G$1" symbol="JUMPER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="J2">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2678,7 +2735,6 @@ Based on the following sources:
 <part name="J3" library="molex" deviceset="22-03-5035" device=""/>
 <part name="J4" library="molex" deviceset="22-03-5045" device=""/>
 <part name="J5" library="molex" deviceset="22-03-5045" device=""/>
-<part name="J6" library="headers" deviceset="1760510000" device=""/>
 <part name="J7" library="headers" deviceset="1760490000" device=""/>
 <part name="GND7" library="fergs" deviceset="GND" device=""/>
 <part name="GND8" library="fergs" deviceset="GND" device=""/>
@@ -2862,11 +2918,13 @@ Based on the following sources:
 <part name="T4" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T5" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T6" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="J6" library="headers" deviceset="1760520000" device=""/>
+<part name="J10" library="headers" deviceset="JUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="15.24" y="205.74" size="1.778" layer="97" align="center">POWER IN
+<text x="5.08" y="203.2" size="1.778" layer="97" align="center">POWER IN
 (BLACK)</text>
 <text x="15.24" y="160.02" size="1.778" layer="97" align="center">AUX. OUT
 (ORANGE)</text>
@@ -2879,10 +2937,10 @@ Based on the following sources:
 <instance part="U4" gate="G$1" x="101.6" y="205.74"/>
 <instance part="IMU" gate="G$1" x="314.96" y="25.4"/>
 <instance part="JTAG" gate="G$1" x="160.02" y="185.42"/>
-<instance part="SUPPLY1" gate="+12V" x="38.1" y="213.36"/>
+<instance part="SUPPLY1" gate="+12V" x="27.94" y="213.36"/>
 <instance part="SUPPLY2" gate="+5V" x="68.58" y="213.36"/>
 <instance part="SUPPLY3" gate="G$1" x="142.24" y="213.36"/>
-<instance part="GND1" gate="1" x="38.1" y="198.12"/>
+<instance part="GND1" gate="1" x="27.94" y="193.04"/>
 <instance part="GND2" gate="1" x="101.6" y="195.58"/>
 <instance part="GND3" gate="1" x="180.34" y="0"/>
 <instance part="GND6" gate="1" x="165.1" y="144.78"/>
@@ -2892,7 +2950,6 @@ Based on the following sources:
 <instance part="J3" gate="G$1" x="495.3" y="55.88"/>
 <instance part="J4" gate="G$1" x="464.82" y="83.82"/>
 <instance part="J5" gate="G$1" x="495.3" y="83.82"/>
-<instance part="J6" gate="G$1" x="27.94" y="205.74" rot="R180"/>
 <instance part="J7" gate="G$1" x="27.94" y="160.02" rot="R180"/>
 <instance part="GND7" gate="1" x="58.42" y="195.58"/>
 <instance part="GND8" gate="1" x="38.1" y="152.4"/>
@@ -3090,23 +3147,21 @@ Based on the following sources:
 <instance part="T4" gate="G$1" x="325.12" y="157.48"/>
 <instance part="T5" gate="G$1" x="325.12" y="154.94"/>
 <instance part="T6" gate="G$1" x="325.12" y="152.4"/>
+<instance part="J6" gate="G$1" x="17.78" y="203.2" rot="R180"/>
+<instance part="J10" gate="G$1" x="33.02" y="203.2"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="+12V" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="2"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="35.56" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="203.2" x2="27.94" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="+12V" pin="+12V"/>
-<wire x1="38.1" y1="208.28" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="208.28" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="208.28" x2="38.1" y2="210.82" width="0.1524" layer="91"/>
-<junction x="38.1" y="208.28"/>
-<pinref part="C41" gate="G$1" pin="+"/>
-<wire x1="45.72" y1="205.74" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
-<junction x="45.72" y="208.28"/>
+<wire x1="27.94" y1="203.2" x2="27.94" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="203.2" x2="30.48" y2="203.2" width="0.1524" layer="91"/>
+<junction x="27.94" y="203.2"/>
+<pinref part="J10" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
@@ -3132,10 +3187,10 @@ Based on the following sources:
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="203.2" x2="38.1" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="203.2" x2="38.1" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="198.12" x2="27.94" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="198.12" x2="27.94" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
@@ -4989,12 +5044,29 @@ Based on the following sources:
 <wire x1="322.58" y1="152.4" x2="317.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<wire x1="45.72" y1="208.28" x2="50.8" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="C41" gate="G$1" pin="+"/>
+<wire x1="45.72" y1="205.74" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="3"/>
+<wire x1="25.4" y1="208.28" x2="40.64" y2="208.28" width="0.1524" layer="91"/>
+<junction x="45.72" y="208.28"/>
+<wire x1="40.64" y1="208.28" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="208.28" x2="40.64" y2="203.2" width="0.1524" layer="91"/>
+<junction x="40.64" y="208.28"/>
+<wire x1="40.64" y1="203.2" x2="38.1" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="J10" gate="G$1" pin="B"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="114,1,406.739,60.2827,U8,D,OE,,,"/>
 <approved hash="114,1,406.739,60.2827,U8,D,I,,,"/>
+<approved hash="104,1,469.9,162.56,U8P,VCC,+5V,,,"/>
 <approved hash="113,1,25.4,120.781,X2,,,,,"/>
 </errors>
 </schematic>
