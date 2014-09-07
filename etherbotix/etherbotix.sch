@@ -1011,8 +1011,8 @@ tested: YES (etherbotix)</description>
 <smd name="1" x="7.4" y="-2.29" dx="3.2" dy="0.93" layer="1"/>
 <smd name="4" x="0" y="0" dx="6.2" dy="5.4" layer="1"/>
 <text x="-3.501" y="-3.81" size="1.27" layer="27" rot="R90">&gt;NAME</text>
-<rectangle x1="4.89" y1="1.87" x2="7.8" y2="2.71" layer="21"/>
-<rectangle x1="4.89" y1="-2.71" x2="7.8" y2="-1.87" layer="21"/>
+<rectangle x1="4.89" y1="1.87" x2="7.8" y2="2.71" layer="51"/>
+<rectangle x1="4.89" y1="-2.71" x2="7.8" y2="-1.87" layer="51"/>
 <wire x1="-1.27" y1="2.72" x2="-2.6" y2="2.72" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="2.72" x2="-2.6" y2="-2.72" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="-2.72" x2="-1.27" y2="-2.72" width="0.127" layer="51"/>

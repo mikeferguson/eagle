@@ -742,8 +742,8 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <smd name="1" x="7.4" y="-2.29" dx="3.2" dy="0.93" layer="1"/>
 <smd name="4" x="0" y="0" dx="6.2" dy="5.4" layer="1"/>
 <text x="-3.501" y="-3.81" size="1.27" layer="27" rot="R90">&gt;NAME</text>
-<rectangle x1="4.89" y1="1.87" x2="7.8" y2="2.71" layer="21"/>
-<rectangle x1="4.89" y1="-2.71" x2="7.8" y2="-1.87" layer="21"/>
+<rectangle x1="4.89" y1="1.87" x2="7.8" y2="2.71" layer="51"/>
+<rectangle x1="4.89" y1="-2.71" x2="7.8" y2="-1.87" layer="51"/>
 <wire x1="-1.27" y1="2.72" x2="-2.6" y2="2.72" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="2.72" x2="-2.6" y2="-2.72" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="-2.72" x2="-1.27" y2="-2.72" width="0.127" layer="51"/>
@@ -1247,7 +1247,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="45.40875" y="17.36625" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="fergs" package="C0603" value="0.1uF" x="66.675" y="25.0825" smashed="yes">
-<attribute name="NAME" x="65.2525" y="25.385" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="65.2525" y="25.385" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="65.875" y="23.4325" size="1.016" layer="27"/>
 </element>
 <element name="C5" library="fergs" package="C0603" value="0.1uF" x="67.31" y="15.5575" smashed="yes">
@@ -1255,7 +1255,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="66.51" y="13.9075" size="1.016" layer="27"/>
 </element>
 <element name="C6" library="fergs" package="C0603" value="0.1uF" x="66.675" y="23.1775" smashed="yes">
-<attribute name="NAME" x="65.2525" y="23.48" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="65.2525" y="23.48" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="65.875" y="21.5275" size="1.016" layer="27"/>
 </element>
 <element name="C7" library="fergs" package="C0603" value="0.1uF" x="61.11875" y="31.4325" smashed="yes" rot="R90">
@@ -1324,11 +1324,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="37.3" y="41.53" size="1.016" layer="27"/>
 </element>
 <element name="C17" library="fergs" package="C0603" value="100pF" x="93.98" y="42.545" smashed="yes">
-<attribute name="NAME" x="95.4025" y="42.08375" size="0.8128" layer="25"/>
+<attribute name="NAME" x="95.56125" y="42.08375" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="93.18" y="40.895" size="1.016" layer="27"/>
 </element>
 <element name="C18" library="fergs" package="C0603" value="100pF" x="93.98" y="44.1325" smashed="yes">
-<attribute name="NAME" x="95.4025" y="43.67125" size="0.8128" layer="25"/>
+<attribute name="NAME" x="95.56125" y="43.67125" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="93.18" y="42.4825" size="1.016" layer="27"/>
 </element>
 <element name="X2" library="ethernet" package="OSCILLATOR" value="" x="66.3575" y="31.4325" rot="R180"/>
@@ -1349,7 +1349,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="90.17" y="44.45" size="1.27" layer="27"/>
 </element>
 <element name="R14" library="fergs" package="0603" value="49R9" x="70.485" y="36.35375" smashed="yes">
-<attribute name="NAME" x="69.69125" y="36.98875" size="0.8128" layer="25"/>
+<attribute name="NAME" x="69.85" y="36.98875" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="69.85" y="34.44875" size="1.27" layer="27"/>
 </element>
 <element name="R15" library="fergs" package="0603" value="49R9" x="69.5325" y="34.13125" smashed="yes" rot="R90">
@@ -1361,7 +1361,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="71.755" y="28.2575" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R17" library="fergs" package="0603" value="49R9" x="71.59625" y="26.3525" smashed="yes" rot="R180">
-<attribute name="NAME" x="70.00875" y="26.67" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="70.00875" y="26.67" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="72.23125" y="28.2575" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C19" library="fergs" package="C0603" value="1uF" x="73.81875" y="40.16375" smashed="yes">
@@ -1369,7 +1369,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="73.01875" y="38.51375" size="1.016" layer="27"/>
 </element>
 <element name="C20" library="fergs" package="C0603" value="1uF" x="71.4375" y="24.765" smashed="yes">
-<attribute name="NAME" x="70.015" y="25.0675" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="70.015" y="25.0675" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="70.6375" y="23.115" size="1.016" layer="27"/>
 </element>
 <element name="C21" library="fergs" package="C0603" value="1uF" x="72.7075" y="29.845" smashed="yes" rot="R270">
@@ -1393,7 +1393,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="73.01875" y="37.085" size="1.016" layer="27"/>
 </element>
 <element name="C26" library="fergs" package="C0603" value="0.1uF" x="72.39" y="23.1775" smashed="yes">
-<attribute name="NAME" x="70.9675" y="23.7975" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="70.9675" y="23.7975" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="71.59" y="21.5275" size="1.016" layer="27"/>
 </element>
 <element name="R18" library="fergs" package="0603" value="2K2" x="69.5325" y="40.48125" smashed="yes" rot="R270">
@@ -1418,7 +1418,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="66.675" y="39.37" size="1.27" layer="27"/>
 </element>
 <element name="C31" library="fergs" package="0603" value="4.7uF" x="52.86375" y="38.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.22875" y="39.52875" size="0.8128" layer="25"/>
+<attribute name="NAME" x="52.07" y="39.52875" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="54.76875" y="37.465" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C32" library="fergs" package="0603" value="1000PF" x="51.27625" y="38.1" smashed="yes" rot="R90">
@@ -1486,11 +1486,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="91.44" y="1.27" size="1.27" layer="27"/>
 </element>
 <element name="R24" library="fergs" package="0603" value="1k" x="93.98" y="10.795" smashed="yes" rot="R270">
-<attribute name="NAME" x="93.50375" y="11.1125" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="94.45625" y="12.3825" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="92.075" y="11.43" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R25" library="fergs" package="0603" value="1k" x="95.885" y="10.795" smashed="yes" rot="R270">
-<attribute name="NAME" x="96.52" y="10.4775" size="0.8128" layer="25"/>
+<attribute name="NAME" x="96.2025" y="12.3825" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="93.98" y="11.43" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="PWR" library="fergs" package="LED0603" value="GREEN" x="8.5725" y="46.51375" smashed="yes">
@@ -1505,11 +1505,11 @@ design rules under a new name.</description>
 <attribute name="RIPPLE" value="2.8A" x="5.23875" y="19.685" size="0.8128" layer="27" display="off"/>
 </element>
 <element name="R27" library="fergs" package="0603" value="15k" x="71.4375" y="1.905" smashed="yes" rot="R180">
-<attribute name="NAME" x="72.86625" y="1.42875" size="0.8128" layer="25"/>
+<attribute name="NAME" x="73.81875" y="1.27" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="72.0725" y="3.81" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R28" library="fergs" package="0603" value="1k" x="71.4375" y="3.4925" smashed="yes">
-<attribute name="NAME" x="72.86625" y="3.01625" size="0.8128" layer="25"/>
+<attribute name="NAME" x="71.12" y="4.1275" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="70.8025" y="1.5875" size="1.27" layer="27"/>
 </element>
 <element name="R29" library="fergs" package="0603" value="2K2" x="59.055" y="47.3075" smashed="yes" rot="R180">
@@ -2349,18 +2349,17 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="MOTORS" pad="VIN1"/>
 <contactref element="MOTORS" pad="VIN2"/>
-<wire x1="45.72" y1="2.54" x2="45.72" y2="2.2225" width="0.6096" layer="1"/>
-<wire x1="45.72" y1="2.2225" x2="44.7675" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="44.7675" y1="1.27" x2="27.46375" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="55.88" y1="2.54" x2="55.88" y2="1.905" width="0.6096" layer="1"/>
-<wire x1="55.88" y1="1.905" x2="55.245" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="55.245" y1="1.27" x2="44.7675" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="45.72" y1="2.54" x2="45.72" y2="2.2225" width="0.8128" layer="1"/>
+<wire x1="45.72" y1="2.2225" x2="44.29125" y2="0.79375" width="0.8128" layer="1"/>
+<wire x1="44.29125" y1="0.79375" x2="26.9875" y2="0.79375" width="0.8128" layer="1"/>
+<wire x1="55.88" y1="2.54" x2="54.13375" y2="0.79375" width="0.8128" layer="1"/>
+<wire x1="54.13375" y1="0.79375" x2="44.29125" y2="0.79375" width="0.8128" layer="1"/>
 <contactref element="R27" pad="2"/>
-<wire x1="55.88" y1="1.905" x2="56.67375" y2="1.11125" width="0.254" layer="1"/>
-<wire x1="56.67375" y1="1.11125" x2="69.79375" y2="1.11125" width="0.254" layer="1"/>
 <wire x1="27.305" y1="1.42875" x2="27.305" y2="5.655" width="0.254" layer="1"/>
 <wire x1="27.305" y1="5.655" x2="27.245" y2="5.715" width="0.254" layer="1"/>
 <wire x1="69.79375" y1="1.11125" x2="70.5875" y2="1.905" width="0.254" layer="1"/>
+<wire x1="69.79375" y1="1.11125" x2="57.30875" y2="1.11125" width="0.254" layer="1"/>
+<wire x1="57.30875" y1="1.11125" x2="55.88" y2="2.54" width="0.254" layer="1"/>
 </signal>
 <signal name="AUX_CURRENT_SENSE">
 <contactref element="U5" pad="7"/>
