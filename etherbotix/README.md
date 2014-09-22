@@ -23,7 +23,7 @@ Need to source 7/16" or 11mm length, 4-40 or M3 standoff (possibly 952-1520-ND)
    * TODO: update values of C4, C13, C17, C18
    * TODO: move R19, R24, R25 out from under IMU
    * Move M1 encoder filter away from MD-03 mounting hole
-   * Add testpads for PE0, PE1, PE4
+   * Add testpads for PE0, PE1, PE4, PA8
    * Add testpads to encoders, clocks, and current sense
  * Rev. A - September 7, 2014
    * First release

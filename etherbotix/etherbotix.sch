@@ -2932,6 +2932,7 @@ Based on the following sources:
 <part name="T15" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T16" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T17" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T18" library="fergs" deviceset="TESTPAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3172,6 +3173,7 @@ Based on the following sources:
 <instance part="T15" gate="G$1" x="365.76" y="152.4" rot="R180"/>
 <instance part="T16" gate="G$1" x="515.62" y="121.92"/>
 <instance part="T17" gate="G$1" x="106.68" y="170.18"/>
+<instance part="T18" gate="G$1" x="220.98" y="119.38" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5112,6 +5114,13 @@ Based on the following sources:
 <pinref part="U1" gate="G$1" pin="PE0(5T)"/>
 <pinref part="T7" gate="G$1" pin="1"/>
 <wire x1="322.58" y1="114.3" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PA8" class="0">
+<segment>
+<pinref part="T18" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="PA8/MCO1(5T)"/>
+<wire x1="223.52" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
