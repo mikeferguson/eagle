@@ -2921,6 +2921,9 @@ Based on the following sources:
 <part name="T6" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="J6" library="headers" deviceset="1760520000" device=""/>
 <part name="J10" library="headers" deviceset="JUMPER" device=""/>
+<part name="T7" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T8" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="T9" library="fergs" deviceset="TESTPAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3150,6 +3153,9 @@ Based on the following sources:
 <instance part="T6" gate="G$1" x="325.12" y="152.4"/>
 <instance part="J6" gate="G$1" x="17.78" y="203.2" rot="R180"/>
 <instance part="J10" gate="G$1" x="33.02" y="203.2"/>
+<instance part="T7" gate="G$1" x="325.12" y="114.3"/>
+<instance part="T8" gate="G$1" x="325.12" y="111.76"/>
+<instance part="T9" gate="G$1" x="325.12" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -5059,6 +5065,27 @@ Based on the following sources:
 <junction x="40.64" y="208.28"/>
 <wire x1="40.64" y1="203.2" x2="38.1" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="J10" gate="G$1" pin="B"/>
+</segment>
+</net>
+<net name="PE4" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PE4(5T)"/>
+<pinref part="T9" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="104.14" x2="317.5" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PE1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PE1(5T)"/>
+<pinref part="T8" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PE0" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PE0(5T)"/>
+<pinref part="T7" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="114.3" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
