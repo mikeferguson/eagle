@@ -2933,6 +2933,8 @@ Based on the following sources:
 <part name="T16" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T17" library="fergs" deviceset="TESTPAD" device=""/>
 <part name="T18" library="fergs" deviceset="TESTPAD" device=""/>
+<part name="BOOT" library="fergs" deviceset="P1.00KHCT-ND" device="" value="DNS"/>
+<part name="GND61" library="fergs" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3174,6 +3176,8 @@ Based on the following sources:
 <instance part="T16" gate="G$1" x="515.62" y="121.92"/>
 <instance part="T17" gate="G$1" x="106.68" y="170.18"/>
 <instance part="T18" gate="G$1" x="220.98" y="119.38" rot="R180"/>
+<instance part="BOOT" gate="G$1" x="355.6" y="78.74"/>
+<instance part="GND61" gate="1" x="363.22" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -3601,6 +3605,12 @@ Based on the following sources:
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="R32" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="BOOT" gate="G$1" pin="2"/>
+<wire x1="360.68" y1="78.74" x2="363.22" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="78.74" x2="363.22" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="GND61" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5121,6 +5131,14 @@ Based on the following sources:
 <pinref part="T18" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="PA8/MCO1(5T)"/>
 <wire x1="223.52" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FORCE_BOOTLOADER" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PE14/TIM1_CH4(5T)"/>
+<pinref part="BOOT" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="78.74" x2="350.52" y2="78.74" width="0.1524" layer="91"/>
+<label x="320.04" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
