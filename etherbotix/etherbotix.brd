@@ -330,7 +330,7 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<circle x="-1.965" y="-1.1825" radius="0.15" width="0.127" layer="21"/>
+<circle x="-1.711" y="-1.9445" radius="0.2516" width="0.1778" layer="21"/>
 <text x="-1.9525" y="1.765" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 </packages>
@@ -1363,7 +1363,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="69.85" y="34.44875" size="1.27" layer="27"/>
 </element>
 <element name="R15" library="fergs" package="0603" value="49R9" x="69.5325" y="34.13125" smashed="yes" rot="R90">
-<attribute name="NAME" x="68.8975" y="33.49625" size="0.8128" layer="25" rot="R90"/>
+<attribute name="NAME" x="68.8975" y="33.81375" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="71.4375" y="33.49625" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R16" library="fergs" package="0603" value="49R9" x="69.85" y="28.8925" smashed="yes" rot="R90">

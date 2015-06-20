@@ -14,7 +14,7 @@ Need to source 7/16" or 11mm length, 4-40 or M3 standoff (possibly 952-1520-ND)
 ## Revision History
 
  * Rev. B - (Forthcoming)
-   * TODO: add P1 indicator to X2. Make X2 pads slightly larger.
+   * Increase size of P1 indicator on X2.
    * TODO: consider alternate package for U4?
    * TODO: move U3 away from AX headers
    * TODO: move J1 (ethernet jack) up a bit to avoid collision with IMU

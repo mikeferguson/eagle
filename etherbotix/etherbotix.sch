@@ -753,7 +753,7 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<circle x="-1.965" y="-1.1825" radius="0.15" width="0.127" layer="21"/>
+<circle x="-1.711" y="-1.9445" radius="0.2516" width="0.1778" layer="21"/>
 <text x="-1.9525" y="1.765" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 </packages>
