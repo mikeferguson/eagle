@@ -15,10 +15,9 @@ Need to source 7/16" or 11mm length, 4-40 or M3 standoff (possibly 952-1520-ND)
 
  * Rev. B - (Forthcoming)
    * Increase size of P1 indicator on X2.
-   * TODO: consider alternate package for U4?
+   * Moved ethernet parts away from MD-03 mounting hole
    * TODO: move U3 away from AX headers
    * TODO: move J1 (ethernet jack) up a bit to avoid collision with IMU
-   * TODO: move ethernet parts away from MD-03 mounting hole
    * TODO: update values of C39, C40
    * TODO: update values of C4, C13, C17, C18
    * TODO: move R19, R24, R25 out from under IMU
@@ -26,5 +25,6 @@ Need to source 7/16" or 11mm length, 4-40 or M3 standoff (possibly 952-1520-ND)
    * Add testpads for PE0, PE1, PE4, PA8
    * Add testpads to encoders, clocks, and current sense
    * Add jumper to force bootloader
+   * TODO: change away from clikmate connector
  * Rev. A - September 7, 2014
    * First release
