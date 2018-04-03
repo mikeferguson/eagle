@@ -246,7 +246,8 @@
 </symbols>
 <devicesets>
 <deviceset name="MINI9IMU">
-<description>Pololu Mini-IMU v2</description>
+<description>Pololu Mini-IMU v2&lt;br&gt;
+tested: YES (etherbotix)</description>
 <gates>
 <gate name="G$1" symbol="MINI9IMU" x="0" y="0"/>
 </gates>
@@ -266,7 +267,8 @@
 </devices>
 </deviceset>
 <deviceset name="MD03A">
-<description>Pololu MD03A Motor Driver</description>
+<description>Pololu MD03A Motor Driver&lt;br&gt;
+tested: YES (etherbotix)</description>
 <gates>
 <gate name="G$1" symbol="MD03A" x="0" y="0"/>
 </gates>
@@ -294,6 +296,8 @@
 </devices>
 </deviceset>
 <deviceset name="U3V50AHV">
+<description>Pololu U3V50AHV Breakout (P/N 2571)&lt;br&gt;
+tested: YES (maxwell powerboard)</description>
 <gates>
 <gate name="G$1" symbol="U3V50AHV" x="0" y="0"/>
 </gates>
@@ -312,7 +316,8 @@
 </devices>
 </deviceset>
 <deviceset name="MD01B">
-<description>Pololu MD01B Motor Driver</description>
+<description>Pololu MD01B Motor Driver&lt;br&gt;
+tested: NO</description>
 <gates>
 <gate name="G$1" symbol="MD01B" x="2.54" y="-5.08"/>
 </gates>

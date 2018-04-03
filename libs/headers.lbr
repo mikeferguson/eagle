@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -378,7 +378,7 @@
 <devicesets>
 <deviceset name="1760490000" prefix="J">
 <description>15A 2P TERM BLOCK, ORANGE&lt;br&gt;
-tested: NO</description>
+tested: YES (etherbotix)</description>
 <gates>
 <gate name="G$1" symbol="CONN2" x="0" y="0"/>
 </gates>
@@ -396,7 +396,7 @@ tested: NO</description>
 </deviceset>
 <deviceset name="1760510000" prefix="J">
 <description>15A 2P TERM BLOCK, BLACK&lt;br&gt;
-tested: NO</description>
+tested: YES (etherbotix)</description>
 <gates>
 <gate name="G$1" symbol="CONN2" x="0" y="0"/>
 </gates>
@@ -629,8 +629,8 @@ tested: YES (etherbotix)</description>
 </devices>
 </deviceset>
 <deviceset name="1760520000" prefix="J">
-<description>15A 3P TERM BLOCK, BLACK
-tested: NO</description>
+<description>15A 3P TERM BLOCK, BLACK&lt;br&gt;
+tested: YES (etherbotix)</description>
 <gates>
 <gate name="G$1" symbol="CONN3" x="0" y="0"/>
 </gates>
