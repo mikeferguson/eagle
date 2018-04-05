@@ -506,8 +506,8 @@ RS 275-1463</text>
 <wire x1="144.78" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="94"/>
 <text x="147.32" y="83.82" size="1.778" layer="95">RUNSTOP</text>
 <text x="274.32" y="2.54" size="5.08" layer="95" align="bottom-right">MAXWELL WIRING DIAGRAM
-OCTOBER 2014. REV. A
-COPYRIGHT 2014 MICHAEL E FERGUSON</text>
+APRIL 2018. REV. B
+COPYRIGHT 2014-2018 MICHAEL E FERGUSON</text>
 <text x="44.45" y="96.52" size="2.54" layer="95">+</text>
 <text x="34.925" y="96.52" size="2.54" layer="95">-</text>
 <text x="111.76" y="132.08" size="1.778" layer="95">CUT RX CABLE DOWN
@@ -638,15 +638,15 @@ ETHERBOTIX</text>
 <wire x1="63.5" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LEFT_ENC" class="0">
+<net name="RIGHT_ENC" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ENC2"/>
 <wire x1="226.06" y1="124.46" x2="226.06" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="91"/>
-<label x="236.22" y="137.16" size="1.778" layer="95"/>
+<label x="233.68" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RIGHT_ENC" class="0">
+<net name="LEFT_ENC" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ENC1"/>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
@@ -654,7 +654,7 @@ ETHERBOTIX</text>
 <label x="172.72" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RIGHT_MOT+" class="0">
+<net name="LEFT_MOT+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="1A"/>
 <wire x1="205.74" y1="124.46" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
@@ -662,23 +662,23 @@ ETHERBOTIX</text>
 <label x="172.72" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LEFT_MOTOR+" class="0">
+<net name="RIGHT_MOTOR+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="2B"/>
 <wire x1="218.44" y1="124.46" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="144.78" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
-<label x="231.14" y="142.24" size="1.778" layer="95"/>
+<label x="228.6" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LEFT_MOTOR-" class="0">
+<net name="RIGHT_MOTOR-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="2A"/>
 <wire x1="215.9" y1="124.46" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="147.32" x2="248.92" y2="147.32" width="0.1524" layer="91"/>
-<label x="231.14" y="147.32" size="1.778" layer="95"/>
+<label x="228.6" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RIGHT_MOT-" class="0">
+<net name="LEFT_MOT-" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="1B"/>
 <wire x1="172.72" y1="152.4" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
