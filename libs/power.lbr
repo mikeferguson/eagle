@@ -458,6 +458,37 @@
 <wire x1="8.87" y1="-3.75" x2="-6.13" y2="-3.75" width="0.127" layer="21"/>
 <wire x1="-6.13" y1="-3.75" x2="-6.13" y2="3.75" width="0.127" layer="21"/>
 </package>
+<package name="SOIC8">
+<wire x1="-2.54" y1="1.5875" x2="-2.2225" y2="1.905" width="0.2032" layer="21" curve="-89.96392"/>
+<wire x1="-2.2225" y1="-1.905" x2="-2.54" y2="-1.5875" width="0.2032" layer="21" curve="-89.96392"/>
+<wire x1="2.54" y1="-1.5875" x2="2.2225" y2="-1.905" width="0.2032" layer="21" curve="-89.96392"/>
+<wire x1="2.2225" y1="1.905" x2="2.54" y2="1.5875" width="0.2032" layer="21" curve="-89.96392"/>
+<wire x1="2.54" y1="1.5875" x2="2.54" y2="-1.5875" width="0.2032" layer="21"/>
+<wire x1="-2.2225" y1="1.905" x2="2.2225" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.2225" y1="-1.905" x2="-2.2225" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.5875" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="-1.5875" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.2032" layer="21" curve="-180"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-3.175" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.175" y="3.175" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC5205">
@@ -672,6 +703,49 @@
 <pin name="O" x="5.08" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="S" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
 <pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="AD8418">
+<pin name="+IN" x="-15.24" y="2.54" visible="pad" length="short"/>
+<pin name="-IN" x="-15.24" y="-2.54" visible="pad" length="short"/>
+<pin name="GND" x="0" y="-12.7" visible="pad" length="short" rot="R90"/>
+<pin name="VREF2" x="5.08" y="-12.7" visible="pad" length="short" rot="R90"/>
+<pin name="OUT" x="17.78" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="VS" x="0" y="12.7" visible="pad" length="short" rot="R270"/>
+<pin name="VREF1" x="5.08" y="12.7" visible="pad" length="short" rot="R270"/>
+<wire x1="-12.7" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="0" y2="5.842" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="2.032" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-5.842" width="0.254" layer="94"/>
+<text x="-2.032" y="2.032" size="1.27" layer="97">+</text>
+<text x="-1.778" y="-3.048" size="1.27" layer="97">-</text>
+<text x="-11.938" y="3.048" size="1.27" layer="97">+IN</text>
+<text x="-11.938" y="-2.032" size="1.27" layer="97">-IN</text>
+<text x="-0.508" y="9.398" size="1.27" layer="97" rot="R180">Vs</text>
+<text x="5.588" y="8.128" size="1.27" layer="97">Vref1</text>
+<text x="-4.318" y="-9.652" size="1.27" layer="97">GND</text>
+<text x="5.588" y="-9.652" size="1.27" layer="97">Vref2</text>
+<text x="-0.508" y="-0.508" size="1.27" layer="97">G=20</text>
+<text x="11.176" y="0.508" size="1.27" layer="97">OUT</text>
+<text x="-12.7" y="10.668" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1020,6 +1094,8 @@ tested: ?</description>
 </devices>
 </deviceset>
 <deviceset name="RTE24005">
+<description>RELAY GENERAL PURPOSE DPDT 8A 5V&lt;br&gt;
+tested: NO</description>
 <gates>
 <gate name="K" symbol="K" x="-12.7" y="0"/>
 <gate name="S1" symbol="U" x="12.7" y="7.62"/>
@@ -1097,6 +1173,28 @@ tested: ?</description>
 <connect gate="G$3" pin="O" pad="10"/>
 <connect gate="G$3" pin="P" pad="9"/>
 <connect gate="G$3" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD8418" prefix="U">
+<description>IC OPAMP CURR SENSE 250KHZ 8SOIC</description>
+<gates>
+<gate name="G$1" symbol="AD8418" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="+IN" pad="8"/>
+<connect gate="G$1" pin="-IN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VREF1" pad="7"/>
+<connect gate="G$1" pin="VREF2" pad="3"/>
+<connect gate="G$1" pin="VS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>

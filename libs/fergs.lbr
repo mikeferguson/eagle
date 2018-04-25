@@ -1302,7 +1302,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRF-0805-F2-R010ELF" prefix="R">
+<deviceset name="CRF0805-FZ-R010ELF" prefix="R">
 <description>RES 0.01 OHM 1% 1/2W 0805</description>
 <gates>
 <gate name="G$1" symbol="R_US" x="0" y="0"/>
