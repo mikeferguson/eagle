@@ -1319,6 +1319,23 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="HHXA500ARA470MHA0G" prefix="C">
+<description>CAP ALUM POLY HYB 47UF 50V SMD</description>
+<gates>
+<gate name="G$1" symbol="CPOL_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PANASONIC_F">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
