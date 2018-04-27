@@ -1336,6 +1336,78 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="C1608X5R1H474K" prefix="C">
+<description>(A8) CAP CER 0.47UF 50V 10% X5R 0603</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="0.47uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC0402KRX7R9BB102" prefix="C">
+<description>(B4) CAP CER 1000PF 50V 10% X7R 0402</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="1000pF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P1.00KLCT-ND" prefix="R">
+<description>(D5) RES 1.00K OHM 1/10W 1% 0402 SMD</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P10.0KLCT-ND" prefix="R">
+<description>(D10) RES 10.0K OHM 1/10W 1% 0402 SMD</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
