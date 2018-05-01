@@ -413,7 +413,7 @@ tested: YES (parallel gripper mcb)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="A1135LLETR-T">
+<deviceset name="A1335LLETR-T" prefix="U">
 <description>HIGH RESOLUTING ANGLE SENSOR&lt;br&gt;
 tested: NO</description>
 <gates>
