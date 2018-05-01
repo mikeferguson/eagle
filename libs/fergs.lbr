@@ -875,7 +875,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="10000pF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1386,7 +1388,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1403,7 +1407,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
