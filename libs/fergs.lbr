@@ -1414,6 +1414,101 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="P53.6KHCT-ND" prefix="R">
+<description>(C14) RES 53k6 OHM 1/10W 1% 0603 SMD</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="53k6" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CL10C121JB8NCNC" prefix="C">
+<description>CAP CER 120PF 50V C0G/NP0 0603</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="120pF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CL10B682KB8SFNC" prefix="C">
+<description>CAP CER 6800PF 50V X7R 0603</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="6800pF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P205KHCT-ND" prefix="R">
+<description>RES 205K OHM 1% 1/10W 0603</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="205k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GRM21BR61H475KE51L" prefix="C">
+<description>CAP CER 4.7UF 50V X5R 0805</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="4.7uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
