@@ -272,6 +272,44 @@
 <pad name="A" x="0" y="0" drill="0.8128"/>
 <pad name="B" x="2.54" y="0" drill="0.8128"/>
 </package>
+<package name="1991150">
+<pad name="4A" x="-2.5" y="4.1" drill="1.1"/>
+<pad name="4" x="-2.5" y="-4.1" drill="1.1"/>
+<pad name="3A" x="-7.5" y="4.1" drill="1.1"/>
+<pad name="2A" x="-12.5" y="4.1" drill="1.1"/>
+<pad name="1A" x="-17.5" y="4.1" drill="1.1"/>
+<pad name="5A" x="2.5" y="4.1" drill="1.1"/>
+<pad name="6A" x="7.5" y="4.1" drill="1.1"/>
+<pad name="7A" x="12.5" y="4.1" drill="1.1"/>
+<pad name="8A" x="17.5" y="4.1" drill="1.1"/>
+<pad name="5" x="2.5" y="-4.1" drill="1.1"/>
+<pad name="6" x="7.5" y="-4.1" drill="1.1"/>
+<pad name="7" x="12.5" y="-4.1" drill="1.1"/>
+<pad name="8" x="17.5" y="-4.1" drill="1.1"/>
+<pad name="3" x="-7.5" y="-4.1" drill="1.1"/>
+<pad name="2" x="-12.5" y="-4.1" drill="1.1"/>
+<pad name="1" x="-17.5" y="-4.1" drill="1.1"/>
+<wire x1="-19.8" y1="6.85" x2="21.6" y2="6.85" width="0.127" layer="21"/>
+<wire x1="21.6" y1="6.85" x2="21.6" y2="-6.65" width="0.127" layer="21"/>
+<wire x1="21.6" y1="-6.65" x2="-19.8" y2="-6.65" width="0.127" layer="21"/>
+<wire x1="-19.8" y1="-6.65" x2="-19.8" y2="6.85" width="0.127" layer="21"/>
+<circle x="-2.3" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="-7.3" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="-12.3" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="-17.3" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="2.7" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="7.7" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="12.7" y="-2.7" radius="2" width="0.127" layer="21"/>
+<circle x="17.7" y="-2.7" radius="2" width="0.127" layer="21"/>
+<rectangle x1="-4.5" y1="0" x2="-0.5" y2="2.5" layer="21"/>
+<rectangle x1="-9.5" y1="0" x2="-5.5" y2="2.5" layer="21"/>
+<rectangle x1="-14.5" y1="0" x2="-10.5" y2="2.5" layer="21"/>
+<rectangle x1="-19.5" y1="0" x2="-15.5" y2="2.5" layer="21"/>
+<rectangle x1="0.5" y1="0" x2="4.5" y2="2.5" layer="21"/>
+<rectangle x1="5.5" y1="0" x2="9.5" y2="2.5" layer="21"/>
+<rectangle x1="10.5" y1="0" x2="14.5" y2="2.5" layer="21"/>
+<rectangle x1="15.5" y1="0" x2="19.5" y2="2.5" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN2">
@@ -373,6 +411,21 @@
 <text x="-1.27" y="0.635" size="1.27" layer="95">&gt;NAME</text>
 <pin name="B" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="A" x="-2.54" y="0" visible="off" length="short"/>
+</symbol>
+<symbol name="CONN8">
+<wire x1="-3.81" y1="21.59" x2="3.81" y2="21.59" width="0.254" layer="94"/>
+<wire x1="3.81" y1="21.59" x2="3.81" y2="-21.59" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-21.59" x2="-3.81" y2="-21.59" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-21.59" x2="-3.81" y2="21.59" width="0.254" layer="94"/>
+<text x="-3.81" y="22.225" size="1.27" layer="95">&gt;NAME</text>
+<pin name="2" x="-7.62" y="12.7" visible="pin" length="middle"/>
+<pin name="1" x="-7.62" y="17.78" visible="pin" length="middle"/>
+<pin name="3" x="-7.62" y="7.62" visible="pin" length="middle"/>
+<pin name="4" x="-7.62" y="2.54" visible="pin" length="middle"/>
+<pin name="5" x="-7.62" y="-2.54" visible="pin" length="middle"/>
+<pin name="6" x="-7.62" y="-7.62" visible="pin" length="middle"/>
+<pin name="7" x="-7.62" y="-12.7" visible="pin" length="middle"/>
+<pin name="8" x="-7.62" y="-17.78" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -656,6 +709,29 @@ tested: YES (etherbotix)</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1991150" prefix="J">
+<description>PC TERM BLOCK 8POS 5MM</description>
+<gates>
+<gate name="G$1" symbol="CONN8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1991150">
+<connects>
+<connect gate="G$1" pin="1" pad="1 1A"/>
+<connect gate="G$1" pin="2" pad="2 2A"/>
+<connect gate="G$1" pin="3" pad="3 3A"/>
+<connect gate="G$1" pin="4" pad="4 4A"/>
+<connect gate="G$1" pin="5" pad="5 5A"/>
+<connect gate="G$1" pin="6" pad="6 6A"/>
+<connect gate="G$1" pin="7" pad="7 7A"/>
+<connect gate="G$1" pin="8" pad="8 8A"/>
 </connects>
 <technologies>
 <technology name=""/>
