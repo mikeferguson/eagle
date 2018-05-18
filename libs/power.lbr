@@ -2039,6 +2039,24 @@ tested: YES (original etherbotix)</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="VX7805-500" prefix="U">
+<description>5V REGULATOR, 500mA. 6.5-36V INPUT</description>
+<gates>
+<gate name="G$1" symbol="VREG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VX78-500">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
