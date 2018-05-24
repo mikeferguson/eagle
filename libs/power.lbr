@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -463,6 +463,7 @@ NOTE: Not compatible with most "DPAK" resistors</description>
 <wire x1="8.87" y1="3.75" x2="8.87" y2="-3.75" width="0.127" layer="21"/>
 <wire x1="8.87" y1="-3.75" x2="-6.13" y2="-3.75" width="0.127" layer="21"/>
 <wire x1="-6.13" y1="-3.75" x2="-6.13" y2="3.75" width="0.127" layer="21"/>
+<text x="-5.842" y="4.064" size="0.3048" layer="21">&gt;NAME</text>
 </package>
 <package name="SOIC8">
 <wire x1="-2.54" y1="1.5875" x2="-2.2225" y2="1.905" width="0.2032" layer="21" curve="-89.96392"/>
@@ -539,6 +540,7 @@ NOTE: Not compatible with most "DPAK" resistors</description>
 <wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<text x="-0.762" y="-0.254" size="0.3048" layer="21">&gt;NAME</text>
 </package>
 <package name="MSOP8">
 <smd name="8" x="-0.975" y="2.2" dx="0.4" dy="1.4" layer="1"/>
@@ -2032,24 +2034,6 @@ tested: YES (original etherbotix)</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VX7805-500" prefix="U">
-<description>5V REGULATOR, 500mA. 6.5-36V INPUT</description>
-<gates>
-<gate name="G$1" symbol="VREG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VX78-500">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

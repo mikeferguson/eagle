@@ -1402,7 +1402,9 @@
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="47uF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1655,6 +1657,76 @@
 <technology name="">
 <attribute name="VALUE" value="1R0" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P470KJCT-ND" prefix="R">
+<description>RESISTOR 470K OHM 5% 1/10W 0402</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="470k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER2512" prefix="R">
+<description>POWER RESISTOR, 1%, 2512</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2512">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C402" prefix="C">
+<description>CAPACITOR, 0402</description>
+<gates>
+<gate name="G$1" symbol="C_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R402" prefix="R">
+<description>RESISTOR, 0402</description>
+<gates>
+<gate name="G$1" symbol="R_US" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
