@@ -12,6 +12,7 @@ This is a collection of libraries and board designs using Eagle CAD.
     ./eagle-lin-7.1.0.run /opt
 
 ## Adding Launcher on Ubuntu 18.04
+Add a file called eagle.desktop to ~/.local/share/applications:
 
     #!/usr/bin/env xdg-open
     [Desktop Entry]
