@@ -926,7 +926,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VALUE" value="1000PF"/>
+<attribute name="VALUE" value="1000pF"/>
 </technology>
 </technologies>
 </device>
